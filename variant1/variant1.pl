@@ -1,8 +1,8 @@
 % variant1.pl
-% Lab 1: Facts and Rules
-% Variant 1
+% Лабораторная работа №1: Факты и правила
+% Вариант 1
 
-% Facts
+% Факты
 dog(flash).
 dog(rover).
 cat(butsy).
@@ -13,7 +13,7 @@ brown(butsy).
 ginger(rover).
 white(star).
 
-% Rules
+% Правила
 pet(X) :- dog(X).
 pet(X) :- cat(X).
 
@@ -24,7 +24,7 @@ owner(tom, X) :- dog(X), \+ black(X).
 owner(kate, X) :- horse(X).
 owner(kate, X) :- black(X).
 
-% Queries:
+% Запросы:
 % 1. ginger(rover).
 % 2. dog(X).
 % 3. owner(Owner, Animal).
